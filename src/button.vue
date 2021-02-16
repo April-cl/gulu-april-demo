@@ -24,7 +24,6 @@ export default {
   },
   methods: {
     changeStatus: function(){
-      console.log(this.loading);
       this.loading = !this.loading
     }
   }
