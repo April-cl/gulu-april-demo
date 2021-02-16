@@ -1,7 +1,7 @@
 <template>
-  <button class="g-button" :class="{[`icon-${iconPosition}`]:true}">
-    <g-icon class="icon" v-if="icon" :name="icon"></g-icon>
-    <g-icon class="icon loading" name="loading"></g-icon>
+  <button class="g-button" :class="{[`icon-${iconPosition}`]:true}" @click="changeStatus">
+    <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
+    <g-icon class="icon loading" v-if="loading" name="loading" :loading="loading"></g-icon>
     <div class="content">
       <slot></slot>
     </div>
@@ -17,6 +17,15 @@ export default {
       validator(value){
         return value === 'left' || value === 'right'
       }
+    }
+  },
+  data: function(){
+    return {loading: false}
+  },
+  methods: {
+    changeStatus: function(){
+      console.log(this.loading);
+      this.loading = !this.loading
     }
   }
 }
