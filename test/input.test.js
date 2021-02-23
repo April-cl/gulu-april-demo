@@ -11,9 +11,14 @@ describe('Input', () => {
   })
 
   describe('props', () => {
-    it('接收value', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({
+    const Constructor = Vue.extend(Input)
+    let vm
+
+    afterEach(function () {
+      vm.$destroy()
+    })
+
+    it('接收value', () => {vm = new Constructor({
         propsData: {
           value: '1234'
         }
@@ -22,9 +27,7 @@ describe('Input', () => {
       expect(inputElement.value).to.equal('1234')
       vm.$destroy()
     })
-    it('接收disabled', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({
+    it('接收disabled', () => {vm = new Constructor({
         propsData: {
           disabled: true
         }
@@ -33,9 +36,7 @@ describe('Input', () => {
       expect(inputElement.disabled).to.equal(true)
       vm.$destroy()
     })
-    it('接收readonly', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({
+    it('接收readonly', () => {vm = new Constructor({
         propsData: {
           readonly: true
         }
@@ -45,8 +46,7 @@ describe('Input', () => {
       vm.$destroy()
     })
     it('接收error', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({
+      vm = new Constructor({
         propsData: {
           error: 'error'
         }
@@ -60,9 +60,15 @@ describe('Input', () => {
   })
 
   describe('events', () => {
+    const Constructor = Vue.extend(Input)
+    let vm
+
+    afterEach(function () {
+      vm.$destroy()
+    })
+
     it('支持change事件', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({}).$mount()
+      vm = new Constructor({}).$mount()
       const callback = sinon.fake()
       vm.$on('change', callback)
       let event = new Event('change')
@@ -71,8 +77,7 @@ describe('Input', () => {
       expect(callback).to.have.been.called
     })
     it('支持input事件', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({}).$mount()
+      vm = new Constructor({}).$mount()
       const callback = sinon.fake()
       vm.$on('input', callback)
       let event = new Event('input')
@@ -81,8 +86,7 @@ describe('Input', () => {
       expect(callback).to.have.been.called
     })
     it('支持focus件', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({}).$mount()
+      vm = new Constructor({}).$mount()
       const callback = sinon.fake()
       vm.$on('focus', callback)
       let event = new Event('focus')
@@ -91,8 +95,7 @@ describe('Input', () => {
       expect(callback).to.have.been.called
     })
     it('支持blur事件', () => {
-      const Constructor = Vue.extend(Input)
-      const vm = new Constructor({}).$mount()
+      vm = new Constructor({}).$mount()
       const callback = sinon.fake()
       vm.$on('blur', callback)
       let event = new Event('blur')
