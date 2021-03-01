@@ -1,5 +1,5 @@
 <template>
-  <div class="row" :style="{}">
+  <div class="row" :style="rowStyle">
     <slot></slot>
   </div>
 </template>
@@ -15,16 +15,19 @@ export default {
     rowStyle() {
       let {gutter} = this
       return {
-        marginLeft: -gutter/2 + 'px',
-        marginRight: -gutter/2 +'px'
+        marginLeft: -gutter / 2 + 'px',
+        marginRight: -gutter / 2 + 'px'
       }
     },
+  },
     mounted() {
+      console.log('row mounted')
       this.$children.forEach((vm) => {
         vm.gutter = this.gutter
+        console.log(this.gutter)
       })
     }
-  }
+
 }
 </script>
 <style scoped lang="scss">

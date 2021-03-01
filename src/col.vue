@@ -27,8 +27,8 @@ export default {
     colClass() {
       let {span, offset} = this
       return [
-          span && `col-${span}`,
-          offset && `offset-${offset}`
+        span && `col-${span}`,
+        offset && `offset-${offset}`
       ]
     },
     colStyle() {
@@ -37,7 +37,7 @@ export default {
         paddingRight: this.gutter / 2 + 'px'
       }
     }
-  }
+  },
 }
 </script>
 <style scoped lang="scss">
