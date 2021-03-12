@@ -10,6 +10,8 @@ import Content from './content'
 import Sider from './sider'
 import Header from './header'
 import Footer from './footer'
+import Toast from './toast'
+import plugin from './plugin'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -22,13 +24,14 @@ Vue.component('g-content', Content)
 Vue.component('g-sider', Sider)
 Vue.component('g-header', Header)
 Vue.component('g-footer', Footer)
+Vue.component('g-toast', Toast)
+Vue.use(plugin)
 
 new Vue({
   el: '#app',
-  data: {
-    loading1: false,
-    loading2: true,
-    loading3: false,
-    message: 'hello'
+  methods: {
+    showToast(){
+      this.$toast('我是message')
+    }
   }
 });
