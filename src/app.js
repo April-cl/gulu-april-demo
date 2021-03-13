@@ -29,9 +29,7 @@ Vue.use(plugin)
 
 new Vue({
   el: '#app',
-  methods: {
-    showToast(){
-      this.$toast('我是message')
-    }
+  created() {
+    this.$toast('文字')
   }
 });
