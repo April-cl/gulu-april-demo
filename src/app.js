@@ -29,16 +29,19 @@ Vue.use(plugin)
 
 new Vue({
   el: '#app',
-  created() {
-    this.$toast('<p><strong>文字</strong></p>', {
-      autoClose: false,
-      closeButton: {
-        text: '我知道了',
-        callback() {
-          console.log('知道了')
-        }
-      },
-      position: 'middle'
-    })
+  methods: {
+    showToast() {
+      this.$toast('<p><strong>文字</strong></p>', {
+        autoClose: false,
+        closeButton: {
+          text: '我知道了',
+          callback() {
+            console.log('知道了')
+          }
+        },
+        position: 'middle'
+      })
+    }
+
   }
 });
