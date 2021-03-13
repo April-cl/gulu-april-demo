@@ -30,7 +30,7 @@ Vue.use(plugin)
 new Vue({
   el: '#app',
   created() {
-    this.$toast('<span><strong>文字</strong></span>', {
+    this.$toast('<p><strong>文字</strong></p><p><strong>文字</strong></p><p><strong>文字</strong></p><p><strong>文字</strong></p>', {
       autoClose: false,
       closeButton: {
         text: '我知道了',
