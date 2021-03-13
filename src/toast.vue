@@ -1,6 +1,10 @@
 <template>
   <div class="toast">
-    <slot></slot>
+    <div class="message">
+      <slot></slot>
+    </div>
+  <div> | </div>
+    <span class="close" v-if="closeButton" @click="onClickClose">{{closeButton.text}}</span>
   </div>
 </template>
 <script>
@@ -14,6 +18,21 @@ export default {
     autoCloseDelay: {
       type: Number,
       default: 3
+    },
+    closeButton: {
+      type: Object,
+      default () {
+        return {
+          text: '知道了',
+          callback: undefined
+        }
+      }
+    }
+  },
+  methods: {
+    onClickClose () {
+      this.$el.remove()
+      this.$destroy()
     }
   },
   mounted () {
@@ -45,5 +64,12 @@ $toast-bg: rgba(0,0,0,0.75);
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(0,0,0,0.50);
   padding: 0 16px;
+  .message {
+    padding: 8px 0;
+  }
+  .close {
+    padding-left: 16px;
+    flex-shrink: 0;
+  }
 }
 </style>

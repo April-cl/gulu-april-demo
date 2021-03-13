@@ -30,6 +30,8 @@ Vue.use(plugin)
 new Vue({
   el: '#app',
   created() {
-    this.$toast('文字')
+    this.$toast('文字', {
+      autoClose: false
+    })
   }
 });
