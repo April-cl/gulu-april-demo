@@ -10,6 +10,10 @@ export default {
     autoClose: {
       type: Boolean,
       default: true
+    },
+    autoCloseDelay: {
+      type: Number,
+      default: 3
     }
   },
   mounted () {
@@ -17,7 +21,7 @@ export default {
       setTimeout(() => {
         this.$el.remove()
         this.$destroy()
-      }, 2000)
+      }, this.autoCloseDelay*1000)
     }
   }
 }
