@@ -31,7 +31,13 @@ new Vue({
   el: '#app',
   created() {
     this.$toast('文字', {
-      autoClose: false
+      autoClose: false,
+      closeButton: {
+        text: '我知道了',
+        callback() {
+          console.log('知道了')
+        }
+      }
     })
   }
 });

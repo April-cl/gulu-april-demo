@@ -33,6 +33,9 @@ export default {
     onClickClose () {
       this.$el.remove()
       this.$destroy()
+      if (typeof this.closeButton.callback === 'function') {
+        this.closeButton.callback(this)
+      }
     }
   },
   mounted () {
