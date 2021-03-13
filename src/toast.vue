@@ -35,24 +35,32 @@ export default {
     }
   },
   methods: {
-    onClickClose () {
+    updateStyle () {
+      this.$nextTick(() => {
+        this.$refs.line.style.height = this.$refs.wrapper.getBoundingClientRect().height + 'px'
+      })
+    },
+    execAutoClose () {
+      if (this.autoClose) {
+        setTimeout(() => {
+          this.close()
+        }, this.autoCloseDelay*1000)
+      }
+    },
+    close () {
       this.$el.remove()
       this.$destroy()
+    },
+    onClickClose () {
+      this.close()
       if (typeof this.closeButton.callback === 'function') {
         this.closeButton.callback(this)
       }
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      this.$refs.line.style.height = this.$refs.wrapper.getBoundingClientRect().height + 'px'
-    })
-    if (this.autoClose) {
-      setTimeout(() => {
-        this.$el.remove()
-        this.$destroy()
-      }, this.autoCloseDelay*1000)
-    }
+    this.updateStyle()
+    this.execAutoClose()
   }
 }
 </script>
