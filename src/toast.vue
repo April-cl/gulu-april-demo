@@ -1,7 +1,8 @@
 <template>
   <div class="toast">
     <div class="message">
-      <slot></slot>
+      <slot v-if="!enableHtml"></slot>
+      <div v-else v-html="$slots.default[0]"></div>
     </div>
   <div> | </div>
     <span class="close" v-if="closeButton" @click="onClickClose">{{closeButton.text}}</span>
@@ -27,6 +28,10 @@ export default {
           callback: undefined
         }
       }
+    },
+    enableHtml: {
+      type: Boolean,
+      default: true
     }
   },
   methods: {
