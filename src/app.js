@@ -39,7 +39,7 @@ new Vue({
             console.log('知道了')
           }
         },
-        position: 'middle'
+        position: 'top'
       })
     }
 
