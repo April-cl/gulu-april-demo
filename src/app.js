@@ -30,18 +30,26 @@ Vue.use(plugin)
 new Vue({
   el: '#app',
   methods: {
-    showToast() {
+    showToast(position) {
       this.$toast('<p><strong>文字</strong></p>', {
+        position,
         autoClose: false,
         closeButton: {
           text: '我知道了',
           callback() {
             console.log('知道了')
           }
-        },
-        position: 'top'
+        }
       })
+    },
+    showToast1() {
+      this.showToast('top')
+    },
+    showToast2() {
+      this.showToast('middle')
+    },
+    showToast3() {
+      this.showToast('bottom')
     }
-
   }
 });
