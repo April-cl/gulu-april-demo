@@ -33,7 +33,7 @@ new Vue({
     showToast(position) {
       this.$toast('<p><strong>文字</strong></p>', {
         position,
-        autoClose: false,
+        autoClose: 1,
         closeButton: {
           text: '我知道了',
           callback() {
