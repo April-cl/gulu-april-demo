@@ -6,58 +6,68 @@
         <div v-else v-html="$slots.default[0]"></div>
       </div>
       <div class="line" ref="line"></div>
-      <span class="close" v-if="closeButton" @click="onClickClose">{{closeButton.text}}</span>
+      <span class="close" v-if="closeButton" @click="onClickClose">
+        {{closeButton.text}}
+      </span>
     </div>
   </div>
 </template>
+
 <script>
+//构造组件的选项
 export default {
   name: 'GuluToast',
   props: {
     autoClose: {
       type: [Boolean, Number],
-      default: 3,
+      default: 5,
       validator (value) {
-        return value === false || typeof value === 'number'
+        return value === false || typeof value === 'number';
       }
     },
     closeButton: {
       type: Object,
       default () {
         return {
-          text: '知道了',
-          callback: undefined
+          text: '关闭', callback: undefined
         }
       }
     },
     enableHtml: {
       type: Boolean,
-      default: true
+      default: false
     },
     position: {
       type: String,
       default: 'top',
       validator (value) {
-        return ['top', 'middle', 'bottom'].indexOf(value) >= 0
+        return ['top', 'bottom', 'middle'].indexOf(value) >= 0
       }
     }
   },
+  mounted () {
+    this.updateStyles()
+    this.execAutoClose()
+  },
   computed: {
     toastClasses () {
-      return {[`position-${this.position}`]: true}
+      return {
+        [`position-${this.position}`]: true
+      }
     }
   },
   methods: {
-    updateStyle () {
+    updateStyles () {
       this.$nextTick(() => {
-        this.$refs.line.style.height = this.$refs.toast.getBoundingClientRect().height + 'px'
+        this.$refs.line.style.height =
+            `${this.$refs.toast.getBoundingClientRect().height}px`
       })
     },
     execAutoClose () {
       if (this.autoClose) {
         setTimeout(() => {
           this.close()
-        }, this.autoClose*1000)
+        }, this.autoClose * 1000)
       }
     },
     close () {
@@ -67,17 +77,14 @@ export default {
     },
     onClickClose () {
       this.close()
-      if (typeof this.closeButton.callback === 'function') {
-        this.closeButton.callback(this)
+      if (this.closeButton && typeof this.closeButton.callback === 'function') {
+        this.closeButton.callback(this)//this === toast实例
       }
     }
-  },
-  mounted () {
-    this.updateStyle()
-    this.execAutoClose()
   }
 }
 </script>
+
 <style scoped lang="scss">
 $font-size: 14px;
 $toast-min-height: 40px;
