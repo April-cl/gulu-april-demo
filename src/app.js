@@ -12,6 +12,11 @@ import Header from './header'
 import Footer from './footer'
 import Toast from './toast'
 import plugin from './plugin'
+import Tabs from './tabs'
+import TabsHead from './tabs-head'
+import TabsBody from './tabs-body'
+import TabsItem from './tabs-item'
+import TabsPane from './tabs-pane'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -26,30 +31,15 @@ Vue.component('g-header', Header)
 Vue.component('g-footer', Footer)
 Vue.component('g-toast', Toast)
 Vue.use(plugin)
+Vue.component('g-tabs', Tabs)
+Vue.component('g-tabs-head', TabsHead)
+Vue.component('g-tabs-body', TabsBody)
+Vue.component('g-tabs-item', TabsItem)
+Vue.component('g-tabs-pane', TabsPane)
 
 new Vue({
   el: '#app',
-  methods: {
-    showToast(position) {
-      this.$toast('<p><strong>文字</strong></p>', {
-        position,
-        autoClose: 1,
-        closeButton: {
-          text: '我知道了',
-          callback() {
-            console.log('知道了')
-          }
-        }
-      })
-    },
-    showToast1() {
-      this.showToast('top')
-    },
-    showToast2() {
-      this.showToast('middle')
-    },
-    showToast3() {
-      this.showToast('bottom')
-    }
+  data: {
+    selectedTab: 'finance'
   }
 });
