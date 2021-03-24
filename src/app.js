@@ -40,6 +40,12 @@ Vue.component('g-tabs-pane', TabsPane)
 new Vue({
   el: '#app',
   data: {
-    selectedTab: 'finance'
+    selectedTab: 'sports'
+  },
+  methods: {
+    yyy(data){
+      console.log('yyy')
+      console.log(data)
+    },
   }
 });
