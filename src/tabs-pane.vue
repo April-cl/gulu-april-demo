@@ -28,8 +28,6 @@ export default {
   },
   created () {
     this.eventBus.$on('update:selected', (name) => {
-      console.log(name)
-      console.log(this.name)
       this.active = name === this.name
       this.active = name === this.name;
     })
