@@ -21,10 +21,11 @@ export default {
       console.log(this.visible)
       if (this.visible) {
         this.$nextTick(() => {
-          document.body.addEventListener('click', () => {
+          let x = () => {
             this.visible = !this.visible
-            console.log('body')
-          })
+            document.removeEventListener('click', x)
+          }
+          document.addEventListener('click', x)
         })
       }
     }
