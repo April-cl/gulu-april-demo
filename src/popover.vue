@@ -1,5 +1,5 @@
 <template>
-  <div class="popover" @click.stop="xxx">
+  <div class="popover" @click="onClick" ref="popover">
     <div ref="contentWrapper" class="content-wrapper" v-if="visible" @click.stop>
       <slot name="content"></slot>
     </div>
@@ -18,22 +18,37 @@ export default {
     }
   },
   methods: {
-    xxx () {
-      this.visible = !this.visible
-      if (this.visible) {
-        this.$nextTick(() => {
-          const contentWrapper = this.$refs.contentWrapper
-          document.body.appendChild(contentWrapper)
-          const {width, height, top, left} = this.$refs.triggerWrapper.getBoundingClientRect()
-          contentWrapper.style.left = left + window.scrollX + 'px'
-          contentWrapper.style.top = top + window.scrollY + 'px'
-          let eventHandle = () => {
-            this.visible = false
-            document.removeEventListener('click', eventHandle)
-          }
-          document.addEventListener('click', eventHandle)
-        })
-      } else {
+    positionContent () {
+      const contentWrapper = this.$refs.contentWrapper
+      document.body.appendChild(contentWrapper)
+      const {width, height, top, left} = this.$refs.triggerWrapper.getBoundingClientRect()
+      contentWrapper.style.left = left + window.scrollX + 'px'
+      contentWrapper.style.top = top + window.scrollY + 'px'
+    },
+    onClickDocument (e) {
+      if (this.$refs.popover && (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))) {
+        return
+      }
+      this.close()
+    },
+    open () {
+      this.visible = true
+      this.$nextTick(() => {
+        this.positionContent()
+        document.addEventListener('click', this.onClickDocument)
+      })
+    },
+    close () {
+      this.visible = false
+      document.removeEventListener('click', this.onClickDocument)
+    },
+    onClick (event) {
+      if (this.$refs.triggerWrapper.contains(event.target)) {
+        if (this.visible) {
+          this.close()
+        } else {
+          this.open()
+        }
       }
     }
   }
