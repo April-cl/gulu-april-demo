@@ -1,6 +1,6 @@
 <template>
   <div class="popover" @click="onClick" ref="popover">
-    <div ref="contentWrapper" class="content-wrapper" v-if="visible" @click.stop>
+    <div ref="contentWrapper" class="content-wrapper" v-if="visible" >
       <slot name="content"></slot>
     </div>
     <span ref="triggerWrapper" style="display: inline-block;">
@@ -27,6 +27,9 @@ export default {
     },
     onClickDocument (e) {
       if (this.$refs.popover && (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))) {
+        return
+      }
+      if (this.$refs.contentWrapper && (this.$refs.contentWrapper === e.target || this.$refs.contentWrapper.contains(e.target))) {
         return
       }
       this.close()
