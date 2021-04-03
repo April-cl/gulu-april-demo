@@ -45,9 +45,9 @@ Vue.component('g-collapse-item', CollapseItem)
 
 new Vue({
   el: '#app',
-  methods: {
-    yyy(){
-      console.log('yyy')
+  data() {
+    return {
+      selectedTab: '2'
     }
   }
 });
