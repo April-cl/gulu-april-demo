@@ -5,7 +5,7 @@ module.exports = {
     nav: [
       {text: '主页', link: '/'},
       {text: '文档', link: '/guide/'},
-      {trxt: '交流', link: 'https//google.com'}
+      {text: '交流', link: 'https//google.com'}
     ],
     sidebar: [
       {
