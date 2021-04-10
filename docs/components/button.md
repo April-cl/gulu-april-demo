@@ -1,10 +1,11 @@
 ---
-title: 按钮
+title: Button - 按钮
 sidebarDepth: 2
 ---
 
-# 按钮
+# Button - 按钮
 
 使用方法
-
-<button-demo />
+<ClientOnly>
+    <button-demo />
+</ClientOnly>
