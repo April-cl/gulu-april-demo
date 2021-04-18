@@ -6,30 +6,24 @@ module.exports = {
     displayAllHeaders: true,
     nav: [
       {text: '主页', link: '/'},
-      {text: '文档', link: '/guide/'},
-      {text: '交流', link: 'https://google.com'}
+      {text: '组件', link: '/components/'},
+      {text: 'Github', link: 'https://github.com/April-cl/gulu-april-demo'}
     ],
-    sidebar: [
-      {
-        title: '入门',
-        children: [
-          '/install/',
-          '/get-started/'
-        ],
-      },
-      {
-        title: '组件',
-        children: [
-          '/components/button',
-          '/components/collapse',
-          '/components/grid',
-          '/components/input',
-          '/components/layout',
-          '/components/popover',
-          '/components/tabs',
-          '/components/toast'
-        ],
-      }
-    ]
+    sidebar: {
+      '/components/': [
+        '/components/button',
+        '/components/collapse',
+        '/components/grid',
+        '/components/input',
+        '/components/layout',
+        '/components/popover',
+        '/components/tabs',
+        '/components/toast'
+      ],
+      '/': [
+        '/install/',
+        '/get-started/'
+      ]
+    }
   }
 }
