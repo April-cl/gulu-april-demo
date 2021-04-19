@@ -1,5 +1,5 @@
 ---
-title: Collapse - 折叠面板
+title: Collapse - 手风琴
 sidebarDepth: 2
 ---
-# Collapse - 折叠面板
+# Collapse - 手风琴

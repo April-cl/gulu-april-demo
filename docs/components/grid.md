@@ -1,5 +1,5 @@
 ---
-title: Grid - 网格
+title: Grid - 栅格
 sidebarDepth: 2
 ---
-# Grid - 网格
+# Grid - 栅格

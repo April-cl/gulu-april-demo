@@ -1,4 +1,8 @@
-# 轱辘 UI 官网
-
-轱辘 UI 是一个好用的 UI 框架，提供了 ... 等常用组件，适合移动端和 PC 端使用
-
+---
+home: true
+heroText: 摩卡UI
+tagline: 一个简单好用的UI组件库
+actionText: 快速上手 →
+actionLink: /get-started/
+footer: MIT Licensed | Copyright © 2018-present Evan You
+---
