@@ -2,6 +2,7 @@
 摩卡UI 是我在学习Vue过程中做的一个UI轮子，目前实现的UI有：
 - 通用
     * Button 按钮
+    * ButtonGroup 按钮组
 - 布局
     * Grid 栅格
     * Layout 布局

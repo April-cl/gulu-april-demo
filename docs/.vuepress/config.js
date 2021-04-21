@@ -2,6 +2,11 @@ module.exports = {
   base: '/gulu-april-demo/',
   title: '轱辘 UI',
   description: '一个好用的 UI 框架',
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   themeConfig: {
     displayAllHeaders: true,
     nav: [
@@ -19,7 +24,8 @@ module.exports = {
           {
             title: '通用',
             children: [
-              '/components/button'
+              '/components/button',
+              '/components/button-group'
             ]
           },
           {
