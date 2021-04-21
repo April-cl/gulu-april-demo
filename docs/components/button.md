@@ -23,7 +23,7 @@ sidebarDepth: 2
 | 属性          | 说明            | 类型     | 默认值 | 取值           |
 | ------------ | --------------- | :-----: | :---: | :-----------: |
 | disabled     | 按钮失效状态      | boolean | false | -             |
-| icon         | 设置按钮的图标组件 | string  | -     | -             |
+| icon         | 设置按钮的图标组件 | string  | -     | 目前支持的取值有 success \| error \| loading \| thumbs-up \| settings \| download \| left \| right \| down             |
 | iconPosition | 设置按钮图标位置   | string  | left  | left \| right |
 | :loading     | 设置按钮载入状态   | boolean | false | true \| false |
 

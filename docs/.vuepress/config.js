@@ -8,7 +8,6 @@ module.exports = {
     }
   },
   themeConfig: {
-    displayAllHeaders: true,
     nav: [
       {text: '主页', link: '/'},
       {text: '指南', link: '/guide/'},
