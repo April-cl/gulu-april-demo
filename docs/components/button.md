@@ -11,7 +11,7 @@ sidebarDepth: 2
 <button-demo />
 </ClientOnly>
 
-## 使用方法
+## 代码展示
 ```vue
 <g-button>默认按钮</g-button>
 <g-button icon="settings">带图标按钮</g-button>

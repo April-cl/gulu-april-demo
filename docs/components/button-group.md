@@ -11,7 +11,7 @@ sidebarDepth: 2
 <button-group-demo />
 </ClientOnly>
 
-## 使用方法
+## 代码展示
 ```vue
 <g-button-group>
   <g-button icon="left">上一页</g-button>

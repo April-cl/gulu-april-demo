@@ -114,3 +114,20 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+* {
+  box-sizing: border-box;
+}
+.demoRow{
+  margin: 10px 0;
+}
+.demoCol {
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
