@@ -18,7 +18,6 @@ module.exports = {
       '/get-started/',
       {
         title: '组件',
-        collapsable: false,
         children: [
           {
             title: '通用',

@@ -27,7 +27,6 @@ export default {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  border: 1px solid red;
   &.hasSider {
     flex-direction: row;
   }

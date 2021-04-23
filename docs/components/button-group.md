@@ -1,6 +1,5 @@
 ---
 title: ButtonGroup - 按钮组
-sidebarDepth: 2
 ---
 
 # ButtonGroup - 按钮组
