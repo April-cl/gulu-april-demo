@@ -46,6 +46,7 @@ $red: #F1453D;
   font-size: $font-size;
   display: inline-flex;
   align-items: center;
+  padding: 4px;
 
   > :not(:last-child) {
     margin-right: 0.5em;
