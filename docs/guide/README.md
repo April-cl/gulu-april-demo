@@ -9,7 +9,7 @@
 - 数据录入
     * Input 输入框
 - 数据展示
-    * Collapse 手风琴 
+    * Collapse 折叠面板
     * Popover 气泡卡片
     * Tabs 标签
     * Toast 弹窗
