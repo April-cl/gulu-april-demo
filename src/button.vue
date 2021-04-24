@@ -50,6 +50,7 @@ $border-color-hover: #666;
   justify-content: center;
   align-items: center;
   vertical-align: top;
+  cursor: pointer;
   &:hover {
     border-color: $border-color-hover;
   }

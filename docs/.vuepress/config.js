@@ -1,6 +1,6 @@
 module.exports = {
   base: '/gulu-april-demo/',
-  title: '轱辘 UI',
+  title: '摩卡 UI',
   description: '一个好用的 UI 框架',
   locales: {
     '/': {

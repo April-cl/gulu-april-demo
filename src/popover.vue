@@ -115,6 +115,7 @@ $border-radius: 4px;
   display: inline-block;
   vertical-align: top;
   position: relative;
+  padding: 4px;
 }
 .content-wrapper {
   position: absolute;
