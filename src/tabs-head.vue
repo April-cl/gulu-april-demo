@@ -40,15 +40,16 @@ $border-color: #ddd;
   justify-content: flex-start;
   height: $tab-horizontal-height;
   position: relative;
-  border-bottom: 1px solid $border-color;
 
-  &.direction-vertical {
+  &.direction-horizontal {
     flex-direction: row;
     height: $tab-horizontal-height;
+    border-bottom: 1px solid $border-color;
   }
   &.direction-vertical {
     flex-direction: column;
     height: $tab-vertical-height;
+    border-right: 1px solid $border-color;
 
     .tabs-head {
       flex-direction: column;
