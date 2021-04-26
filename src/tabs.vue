@@ -1,5 +1,5 @@
 <template>
-  <div className="tabs">
+  <div class="tabs" :class='{[`direction-${direction}`]:true}'>
     <slot></slot>
   </div>
 </template>
@@ -28,7 +28,8 @@ export default {
   },
   provide() {
     return {
-      eventBus: this.eventBus
+      eventBus: this.eventBus,
+      direction: this.direction
     }
   },
   methods: {
@@ -55,7 +56,14 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
 .tabs {
+  display: flex;
+  &.direction-horizontal {
+    flex-direction: column;
+  }
+  &.direction-vertical {
+    flex-direction: row;
+  }
 }
 </style>
