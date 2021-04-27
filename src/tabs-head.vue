@@ -16,13 +16,15 @@ export default {
   mounted () {
     if (this.eventBus) {
       this.eventBus.$on('update:selected', (item, vm) => {
-        let {width, bottom, height, left} = vm.$el.getBoundingClientRect()
-        let {left: headLeft, bottom: headBottom} = this.$refs.head.getBoundingClientRect()
-        this.$refs.line.style.width = `${width}px`
+        let {width, top, height, left} = vm.$el.getBoundingClientRect()
+        let {left: headLeft, top: headTop} = this.$refs.head.getBoundingClientRect()
+
         if (this.direction === 'horizontal') {
+          this.$refs.line.style.width = `${width}px`
           this.$refs.line.style.left = `${left - headLeft}px`
         } else if (this.direction === 'vertical') {
-          this.$refs.line.style.bottom = `${headBottom - bottom}px`
+          this.$refs.line.style.height = `${height}px`
+          this.$refs.line.style.top = `${top-headTop}px`
         }
       })
     }
@@ -45,6 +47,13 @@ $border-color: #ddd;
     flex-direction: row;
     height: $tab-horizontal-height;
     border-bottom: 1px solid $border-color;
+
+    .tabs-head {
+      > .line {
+        bottom: 0;
+        border-bottom: 3px solid $blue;
+      }
+    }
   }
   &.direction-vertical {
     flex-direction: column;
@@ -53,6 +62,13 @@ $border-color: #ddd;
 
     .tabs-head {
       flex-direction: column;
+
+      > .line {
+        top: 0;
+        right: 0;
+        border-bottom: 3px solid $blue;
+        border-right: 3px solid $blue;
+      }
     }
   }
 
@@ -62,8 +78,6 @@ $border-color: #ddd;
     position: relative;
     > .line {
       position: absolute;
-      bottom: 0;
-      border-bottom: 3px solid $blue;
       transition: all 350ms;
     }
     > .actions-wrapper {
