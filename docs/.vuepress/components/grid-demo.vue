@@ -1,106 +1,106 @@
 <template>
   <div>
-    <g-row class="demoRow">
-      <g-col span="24">
+    <m-row class="demoRow">
+      <m-col span="24">
         <div class="demoCol">24</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
 
-    <g-row class="demoRow">
-      <g-col span="12">
+    <m-row class="demoRow">
+      <m-col span="12">
         <div class="demoCol">12</div>
-      </g-col>
-      <g-col span="12">
+      </m-col>
+      <m-col span="12">
         <div class="demoCol">12</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
 
-    <g-row class="demoRow">
-      <g-col span="8">
+    <m-row class="demoRow">
+      <m-col span="8">
         <div class="demoCol">8</div>
-      </g-col>
-      <g-col span="8">
+      </m-col>
+      <m-col span="8">
         <div class="demoCol">8</div>
-      </g-col>
-      <g-col span="8">
+      </m-col>
+      <m-col span="8">
         <div class="demoCol">8</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
 
-    <g-row class="demoRow">
-      <g-col span="6">
+    <m-row class="demoRow">
+      <m-col span="6">
         <div class="demoCol">6</div>
-      </g-col>
-      <g-col span="6">
+      </m-col>
+      <m-col span="6">
         <div class="demoCol">6</div>
-      </g-col>
-      <g-col span="6">
+      </m-col>
+      <m-col span="6">
         <div class="demoCol">6</div>
-      </g-col>
-      <g-col span="6">
+      </m-col>
+      <m-col span="6">
         <div class="demoCol">6</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
 
-    <g-row class="demoRow">
-      <g-col span="4">
+    <m-row class="demoRow">
+      <m-col span="4">
         <div class="demoCol">4</div>
-      </g-col>
-      <g-col span="4">
+      </m-col>
+      <m-col span="4">
         <div class="demoCol">4</div>
-      </g-col>
-      <g-col span="4">
+      </m-col>
+      <m-col span="4">
         <div class="demoCol">4</div>
-      </g-col>
-      <g-col span="4">
+      </m-col>
+      <m-col span="4">
         <div class="demoCol">4</div>
-      </g-col>
-      <g-col span="4">
+      </m-col>
+      <m-col span="4">
         <div class="demoCol">4</div>
-      </g-col>
-      <g-col span="4">
+      </m-col>
+      <m-col span="4">
         <div class="demoCol">4</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
 
-    <g-row class="demoRow">
-      <g-col span="2">
+    <m-row class="demoRow">
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-      <g-col span="2">
+      </m-col>
+      <m-col span="2">
         <div class="demoCol">2</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 
@@ -109,8 +109,8 @@ import Col from '../../../src/Col'
 import Row from '../../../src/Row'
 export default {
   components: {
-    'g-col': Col,
-    'g-row': Row
+    'm-col': Col,
+    'm-row': Row
   },
 }
 </script>

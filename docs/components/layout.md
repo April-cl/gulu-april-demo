@@ -15,11 +15,11 @@ title: Layout - 布局
 
 代码展示
 ```vue
-<g-layout style="color: white; margin-bottom:50px;">
-  <g-header style="height: 50px; background:lightskyblue;">header</g-header>
-  <g-content style="height: 100px; background:deepskyblue;">content</g-content>
-  <g-footer style="height: 50px; background:lightskyblue;">footer</g-footer>
-</g-layout>
+<m-layout style="color: white; margin-bottom:50px;">
+  <m-header style="height: 50px; background:lightskyblue;">header</m-header>
+  <m-content style="height: 100px; background:deepskyblue;">content</m-content>
+  <m-footer style="height: 50px; background:lightskyblue;">footer</m-footer>
+</m-layout>
 ```
 
 ## 上中下布局（含侧边栏）
@@ -32,14 +32,14 @@ title: Layout - 布局
 
 代码展示
 ```vue
-<g-layout style="color: white; margin-bottom:50px;">
-    <g-header style="height: 50px; background:lightskyblue;">header</g-header>
-    <g-layout>
-      <g-sider style="height: 100px; background:mediumturquoise; width:200px;" close-button>sider</g-sider>
-      <g-content style="height: 100px; background:deepskyblue;">content</g-content>
-    </g-layout>
-    <g-footer style="height: 50px; background:lightskyblue;">footer</g-footer>
-</g-layout>
+<m-layout style="color: white; margin-bottom:50px;">
+    <m-header style="height: 50px; background:lightskyblue;">header</m-header>
+    <m-layout>
+      <m-sider style="height: 100px; background:mediumturquoise; width:200px;" close-button>sider</m-sider>
+      <m-content style="height: 100px; background:deepskyblue;">content</m-content>
+    </m-layout>
+    <m-footer style="height: 50px; background:lightskyblue;">footer</m-footer>
+</m-layout>
 ```
 
 ## 顶部-侧边布局
@@ -52,15 +52,15 @@ title: Layout - 布局
 
 代码展示
 ```vue
-<g-layout style="color: white; margin-bottom:50px;">
-    <g-header style="height: 50px; background:lightskyblue;">header</g-header>
-    <g-layout style="overflow: hidden">
-      <g-sider style="background:mediumturquoise; width:200px;">sider</g-sider>
-      <g-layout>
-        <g-content style="height: 100px; background:deepskyblue;">content</g-content>
-        <g-footer style="height: 50px; background:lightskyblue;">footer</g-footer></g-layout>
-    </g-layout>
-</g-layout>
+<m-layout style="color: white; margin-bottom:50px;">
+    <m-header style="height: 50px; background:lightskyblue;">header</m-header>
+    <m-layout style="overflow: hidden">
+      <m-sider style="background:mediumturquoise; width:200px;">sider</m-sider>
+      <m-layout>
+        <m-content style="height: 100px; background:deepskyblue;">content</m-content>
+        <m-footer style="height: 50px; background:lightskyblue;">footer</m-footer></m-layout>
+    </m-layout>
+</m-layout>
 ```
 
 ## 组件概述

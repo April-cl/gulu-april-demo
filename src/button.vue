@@ -1,8 +1,8 @@
 <template>
-  <button class="g-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
-    <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
-    <g-icon class="icon loading" v-if="loading" name="loading" :loading="loading"></g-icon>
-    <div class="g-button-content">
+  <button class="m-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
+    <m-icon class="icon" v-if="icon && !loading" :name="icon"></m-icon>
+    <m-icon class="icon loading" v-if="loading" name="loading" :loading="loading"></m-icon>
+    <div class="m-button-content">
       <slot></slot>
     </div>
   </button>
@@ -12,7 +12,7 @@ import Icon from './icon.vue'
 export default {
   name: 'GuluButton',
   components: {
-    'g-icon': Icon
+    'm-icon': Icon
   },
   props:{
     'icon': {},
@@ -39,7 +39,7 @@ $border-radius: 4px;
 $color: #333;
 $border-color: #999;
 $border-color-hover: #666;
-.g-button {
+.m-button {
   font-size: $font-size;
   height: $button-height;
   padding: 0 1em;
@@ -61,7 +61,7 @@ $border-color-hover: #666;
   &:focus {
     outline: none;
   }
-  > .g-button-content {
+  > .m-button-content {
     order: 2;
   }
   > .icon {
@@ -73,7 +73,7 @@ $border-color-hover: #666;
   }
 
   &.icon-right {
-    > .g-button-content {
+    > .m-button-content {
       order: 1;
     }
     > .icon {

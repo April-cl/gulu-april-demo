@@ -12,13 +12,13 @@ title: ButtonGroup - 按钮组
 
 ## 代码展示
 ```vue
-<g-button-group>
-  <g-button icon="left">上一页</g-button>
-  <g-button icon="right" icon-position="right">下一页</g-button>
-</g-button-group>
+<m-button-group>
+  <m-button icon="left">上一页</m-button>
+  <m-button icon="right" icon-position="right">下一页</m-button>
+</m-button-group>
 ```
 
 ::: tip 提示
-g-button-group 的子元素应该全是 g-button
+m-button-group 的子元素应该全是 m-button
 :::
 

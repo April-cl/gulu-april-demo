@@ -49,9 +49,9 @@
     export default {
         name: 'App',
         components: {
-            'g-button': Button,
-            'g-button-group': ButtonGroup,
-            'g-icon': Icon,
+            'm-button': Button,
+            'm-button-group': ButtonGroup,
+            'm-icon': Icon,
         }
     }
     ```

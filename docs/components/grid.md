@@ -11,7 +11,7 @@ title: Grid - 栅格
 
 - 你的内容应当放置于 col 内，并且，只有 col 可以作为 row 的直接元素。
 
-- 栅格系统中的列是指 1 到 24 的值来表示其跨越的范围。例如，三个等宽的列可以使用 `<g-col span="8" /> `来创建。
+- 栅格系统中的列是指 1 到 24 的值来表示其跨越的范围。例如，三个等宽的列可以使用 `<m-col span="8" /> `来创建。
 
 - 如果一个 row 中的 col 总和超过 24，那么多余的 col 会作为一个整体另起一行排列。
 
@@ -27,107 +27,107 @@ title: Grid - 栅格
 
 ## 代码展示
 ```vue
-<g-row class="demoRow">
-  <g-col span="24">
+<m-row class="demoRow">
+  <m-col span="24">
     <div class="demoCol">24</div>
-  </g-col>
-</g-row>
+  </m-col>
+</m-row>
 
-<g-row class="demoRow">
-  <g-col span="12">
+<m-row class="demoRow">
+  <m-col span="12">
     <div class="demoCol">12</div>
-  </g-col>
-  <g-col span="12">
+  </m-col>
+  <m-col span="12">
     <div class="demoCol">12</div>
-  </g-col>
-</g-row>
+  </m-col>
+</m-row>
 
-<g-row class="demoRow">
-  <g-col span="8">
+<m-row class="demoRow">
+  <m-col span="8">
     <div class="demoCol">8</div>
-  </g-col>
-  <g-col span="8">
+  </m-col>
+  <m-col span="8">
     <div class="demoCol">8</div>
-  </g-col>
-  <g-col span="8">
+  </m-col>
+  <m-col span="8">
     <div class="demoCol">8</div>
-  </g-col>
-</g-row>
+  </m-col>
+</m-row>
 
-<g-row class="demoRow">
-  <g-col span="6">
+<m-row class="demoRow">
+  <m-col span="6">
     <div class="demoCol">6</div>
-  </g-col>
-  <g-col span="6">
+  </m-col>
+  <m-col span="6">
     <div class="demoCol">6</div>
-  </g-col>
-  <g-col span="6">
+  </m-col>
+  <m-col span="6">
     <div class="demoCol">6</div>
-  </g-col>
-  <g-col span="6">
+  </m-col>
+  <m-col span="6">
     <div class="demoCol">6</div>
-  </g-col>
-</g-row>
+  </m-col>
+</m-row>
 
-<g-row class="demoRow">
-  <g-col span="4">
+<m-row class="demoRow">
+  <m-col span="4">
     <div class="demoCol">4</div>
-  </g-col>
-  <g-col span="4">
+  </m-col>
+  <m-col span="4">
     <div class="demoCol">4</div>
-  </g-col>
-  <g-col span="4">
+  </m-col>
+  <m-col span="4">
     <div class="demoCol">4</div>
-  </g-col>
-  <g-col span="4">
+  </m-col>
+  <m-col span="4">
     <div class="demoCol">4</div>
-  </g-col>
-  <g-col span="4">
+  </m-col>
+  <m-col span="4">
     <div class="demoCol">4</div>
-  </g-col>
-  <g-col span="4">
+  </m-col>
+  <m-col span="4">
     <div class="demoCol">4</div>
-  </g-col>
-</g-row>
+  </m-col>
+</m-row>
 
-<g-row class="demoRow">
-  <g-col span="2">
+<m-row class="demoRow">
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-  <g-col span="2">
+  </m-col>
+  <m-col span="2">
     <div class="demoCol">2</div>
-  </g-col>
-</g-row>
+  </m-col>
+</m-row>
 ```
 
 ## 选项
@@ -146,17 +146,17 @@ title: Grid - 栅格
 
 代码展示
 ```vue
-<g-row class="demoRow" gutter="10">
-    <g-col span="8">
+<m-row class="demoRow" gutter="10">
+    <m-col span="8">
       <div class="demoCol">gutter-10</div>
-    </g-col>
-    <g-col span="8">
+    </m-col>
+    <m-col span="8">
       <div class="demoCol">gutter-10</div>
-    </g-col>
-    <g-col span="8">
+    </m-col>
+    <m-col span="8">
       <div class="demoCol">gutter-10</div>
-    </g-col>
-</g-row>
+    </m-col>
+</m-row>
 ```
 
    ---
@@ -173,32 +173,32 @@ title: Grid - 栅格
 
 代码展示
 ```vue
- <g-row class="demoRow" gutter="10" align="left">
-   <g-col span="8">
+ <m-row class="demoRow" gutter="10" align="left">
+   <m-col span="8">
      <div class="demoCol">1 align-left</div>
-   </g-col>
-   <g-col span="8">
+   </m-col>
+   <m-col span="8">
      <div class="demoCol">2 align-left</div>
-   </g-col>
- </g-row>
+   </m-col>
+ </m-row>
 
- <g-row class="demoRow" gutter="10" align="center">
-   <g-col span="8">
+ <m-row class="demoRow" gutter="10" align="center">
+   <m-col span="8">
      <div class="demoCol">1 align-center</div>
-   </g-col>
-   <g-col span="8">
+   </m-col>
+   <m-col span="8">
      <div class="demoCol">2 align-center</div>
-   </g-col>
- </g-row>
+   </m-col>
+ </m-row>
 
- <g-row class="demoRow" gutter="10" align="right">
-   <g-col span="8">
+ <m-row class="demoRow" gutter="10" align="right">
+   <m-col span="8">
      <div class="demoCol">1 align-right</div>
-   </g-col>
-   <g-col span="8">
+   </m-col>
+   <m-col span="8">
      <div class="demoCol">2 align-right</div>
-   </g-col>
- </g-row>
+   </m-col>
+ </m-row>
 ```
 
 
@@ -215,28 +215,28 @@ title: Grid - 栅格
 
 代码展示
 ```vue
- <g-row class="demoRow">
-   <g-col span="8">
+ <m-row class="demoRow">
+   <m-col span="8">
      <div class="demoCol">span-8</div>
-   </g-col>
-   <g-col span="8">
+   </m-col>
+   <m-col span="8">
      <div class="demoCol">span-8</div>
-   </g-col>
-   <g-col span="8">
+   </m-col>
+   <m-col span="8">
      <div class="demoCol">span-8</div>
-   </g-col>
- </g-row>
- <g-row class="demoRow">
-   <g-col span="6">
+   </m-col>
+ </m-row>
+ <m-row class="demoRow">
+   <m-col span="6">
      <div class="demoCol">span-6</div>
-   </g-col>
-   <g-col span="12">
+   </m-col>
+   <m-col span="12">
      <div class="demoCol">span-12</div>
-   </g-col>
-   <g-col span="6">
+   </m-col>
+   <m-col span="6">
      <div class="demoCol">span-6</div>
-   </g-col>
- </g-row>
+   </m-col>
+ </m-row>
 ```
 
    ---
@@ -252,22 +252,22 @@ title: Grid - 栅格
 
 代码展示
 ```vue
- <g-row class="demoRow">
-   <g-col span="8">
+ <m-row class="demoRow">
+   <m-col span="8">
      <div class="demoCol">span-8</div>
-   </g-col>
-   <g-col span="12" offset="2">
+   </m-col>
+   <m-col span="12" offset="2">
      <div class="demoCol">span-12 & offset-2</div>
-   </g-col>
- </g-row>
- <g-row class="demoRow">
-   <g-col span="4">
+   </m-col>
+ </m-row>
+ <m-row class="demoRow">
+   <m-col span="4">
      <div class="demoCol">span-4</div>
-   </g-col>
-   <g-col span="16" offset="4">
+   </m-col>
+   <m-col span="16" offset="4">
      <div class="demoCol">span-16 & offset-4</div>
-   </g-col>
- </g-row>
+   </m-col>
+ </m-row>
 ```
 
    ---
@@ -283,29 +283,29 @@ title: Grid - 栅格
 
 代码展示
 ```vue
- <g-row class="demoRow">
-   <g-col span="24">
+ <m-row class="demoRow">
+   <m-col span="24">
      <div class="demoCol">default</div>
-   </g-col>
- </g-row>
- <g-row class="demoRow">
-   <g-col span="24" :ipad="{span:16}">
+   </m-col>
+ </m-row>
+ <m-row class="demoRow">
+   <m-col span="24" :ipad="{span:16}">
      <div class="demoCol">ipad</div>
-   </g-col>
- </g-row>
- <g-row class="demoRow">
-   <g-col span="24" :narrow-pc="{span:12}">
+   </m-col>
+ </m-row>
+ <m-row class="demoRow">
+   <m-col span="24" :narrow-pc="{span:12}">
      <div class="demoCol">narrow-pc</div>
-   </g-col>
- </g-row>
- <g-row class="demoRow">
-   <g-col span="24" :pc="{span:8}">
+   </m-col>
+ </m-row>
+ <m-row class="demoRow">
+   <m-col span="24" :pc="{span:8}">
      <div class="demoCol">pc</div>
-   </g-col>
- </g-row>
- <g-row class="demoRow">
-   <g-col span="24" :wide-pc="{span:4}">
+   </m-col>
+ </m-row>
+ <m-row class="demoRow">
+   <m-col span="24" :wide-pc="{span:4}">
      <div class="demoCol">wide-pc</div>
-   </g-col>
- </g-row>
+   </m-col>
+ </m-row>
 ```

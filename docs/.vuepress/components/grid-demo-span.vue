@@ -1,27 +1,27 @@
 <template>
   <div>
-    <g-row class="demoRow">
-      <g-col span="8">
+    <m-row class="demoRow">
+      <m-col span="8">
         <div class="demoCol">span-8</div>
-      </g-col>
-      <g-col span="8">
+      </m-col>
+      <m-col span="8">
         <div class="demoCol">span-8</div>
-      </g-col>
-      <g-col span="8">
+      </m-col>
+      <m-col span="8">
         <div class="demoCol">span-8</div>
-      </g-col>
-    </g-row>
-    <g-row class="demoRow">
-      <g-col span="6">
+      </m-col>
+    </m-row>
+    <m-row class="demoRow">
+      <m-col span="6">
         <div class="demoCol">span-6</div>
-      </g-col>
-      <g-col span="12">
+      </m-col>
+      <m-col span="12">
         <div class="demoCol">span-12</div>
-      </g-col>
-      <g-col span="6">
+      </m-col>
+      <m-col span="6">
         <div class="demoCol">span-6</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 
@@ -30,8 +30,8 @@ import Col from '../../../src/Col'
 import Row from '../../../src/Row'
 export default {
   components: {
-    'g-col': Col,
-    'g-row': Row
+    'm-col': Col,
+    'm-row': Row
   },
 }
 </script>

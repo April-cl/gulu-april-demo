@@ -15,19 +15,19 @@ title: Collapse - 折叠面板
 ```vue
 <div>
   <h2>单选面板</h2>
-  <g-collapse :selected.sync="selected1" single>
-    <g-collapse-item title="我是标题1" name="单选面板1">我是单选面板1</g-collapse-item>
-    <g-collapse-item title="我是标题2" name="单选面板2">我是单选面板2</g-collapse-item>
-    <g-collapse-item title="我是标题3" name="单选面板3">我是单选面板3</g-collapse-item>
-  </g-collapse>
+  <m-collapse :selected.sync="selected1" single>
+    <m-collapse-item title="我是标题1" name="单选面板1">我是单选面板1</m-collapse-item>
+    <m-collapse-item title="我是标题2" name="单选面板2">我是单选面板2</m-collapse-item>
+    <m-collapse-item title="我是标题3" name="单选面板3">我是单选面板3</m-collapse-item>
+  </m-collapse>
 </div>
 <div>
   <h2>多选面板</h2>
-  <g-collapse :selected.sync="selected2">
-    <g-collapse-item title="我是标题1" name="多选面板1">我是多选面板1</g-collapse-item>
-    <g-collapse-item title="我是标题2" name="多选面板2">我是多选面板2</g-collapse-item>
-    <g-collapse-item title="我是标题3" name="多选面板3">我是多选面板3</g-collapse-item>
-  </g-collapse>
+  <m-collapse :selected.sync="selected2">
+    <m-collapse-item title="我是标题1" name="多选面板1">我是多选面板1</m-collapse-item>
+    <m-collapse-item title="我是标题2" name="多选面板2">我是多选面板2</m-collapse-item>
+    <m-collapse-item title="我是标题3" name="多选面板3">我是多选面板3</m-collapse-item>
+  </m-collapse>
 </div>
 ```
 

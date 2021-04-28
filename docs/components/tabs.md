@@ -15,33 +15,33 @@ title: Tabs - 标签
 ```vue
 <div>
 <h2>我是横向标签页</h2>
-<g-tabs :selected.sync="selectedTab">
-  <g-tabs-head>
-    <g-tabs-item name="1">标签1</g-tabs-item>
-    <g-tabs-item name="2" disabled>标签2</g-tabs-item>
-    <g-tabs-item name="3">标签3</g-tabs-item>
-  </g-tabs-head>
-  <g-tabs-body>
-    <g-tabs-pane name="1">内容1</g-tabs-pane>
-    <g-tabs-pane name="2">内容2</g-tabs-pane>
-    <g-tabs-pane name="3">内容3</g-tabs-pane>
-  </g-tabs-body>
-</g-tabs>
+<m-tabs :selected.sync="selectedTab">
+  <m-tabs-head>
+    <m-tabs-item name="1">标签1</m-tabs-item>
+    <m-tabs-item name="2" disabled>标签2</m-tabs-item>
+    <m-tabs-item name="3">标签3</m-tabs-item>
+  </m-tabs-head>
+  <m-tabs-body>
+    <m-tabs-pane name="1">内容1</m-tabs-pane>
+    <m-tabs-pane name="2">内容2</m-tabs-pane>
+    <m-tabs-pane name="3">内容3</m-tabs-pane>
+  </m-tabs-body>
+</m-tabs>
 </div>
 <div>
 <h2>我是纵向标签页</h2>
-<g-tabs :selected.sync="selectedTab" direction="vertical">
-  <g-tabs-head>
-    <g-tabs-item name="1">标签1</g-tabs-item>
-    <g-tabs-item name="2">标签2</g-tabs-item>
-    <g-tabs-item name="3">标签3</g-tabs-item>
-  </g-tabs-head>
-  <g-tabs-body>
-    <g-tabs-pane name="1">内容1</g-tabs-pane>
-    <g-tabs-pane name="2">内容2</g-tabs-pane>
-    <g-tabs-pane name="3">内容3</g-tabs-pane>
-  </g-tabs-body>
-</g-tabs>
+<m-tabs :selected.sync="selectedTab" direction="vertical">
+  <m-tabs-head>
+    <m-tabs-item name="1">标签1</m-tabs-item>
+    <m-tabs-item name="2">标签2</m-tabs-item>
+    <m-tabs-item name="3">标签3</m-tabs-item>
+  </m-tabs-head>
+  <m-tabs-body>
+    <m-tabs-pane name="1">内容1</m-tabs-pane>
+    <m-tabs-pane name="2">内容2</m-tabs-pane>
+    <m-tabs-pane name="3">内容3</m-tabs-pane>
+  </m-tabs-body>
+</m-tabs>
 </div>
   ```
 
@@ -49,14 +49,14 @@ title: Tabs - 标签
 
 组件结构
 ```vue
-<g-tabs>
-<g-tabs-head>
-  <g-tabs-item>标签</g-tabs-item>
-</g-tabs-head>
-<g-tabs-body>
-  <g-tabs-pane>内容</g-tabs-pane>
-</g-tabs-body>
-</g-tabs>
+<m-tabs>
+<m-tabs-head>
+  <m-tabs-item>标签</m-tabs-item>
+</m-tabs-head>
+<m-tabs-body>
+  <m-tabs-pane>内容</m-tabs-pane>
+</m-tabs-body>
+</m-tabs>
 ```
 
 `Tabs`

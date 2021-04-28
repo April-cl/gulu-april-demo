@@ -1,16 +1,16 @@
 <template>
   <div>
-    <g-row class="demoRow" gutter="10">
-      <g-col span="8">
+    <m-row class="demoRow" gutter="10">
+      <m-col span="8">
         <div class="demoCol">gutter-10</div>
-      </g-col>
-      <g-col span="8">
+      </m-col>
+      <m-col span="8">
         <div class="demoCol">gutter-10</div>
-      </g-col>
-      <g-col span="8">
+      </m-col>
+      <m-col span="8">
         <div class="demoCol">gutter-10</div>
-      </g-col>
-    </g-row>
+      </m-col>
+    </m-row>
   </div>
 </template>
 
@@ -19,8 +19,8 @@ import Col from '../../../src/Col'
 import Row from '../../../src/Row'
 export default {
   components: {
-    'g-col': Col,
-    'g-row': Row
+    'm-col': Col,
+    'm-row': Row
   },
 }
 </script>

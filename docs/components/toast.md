@@ -14,9 +14,9 @@ title: Toast - 弹窗
 ## 代码展示
 ```vue
 <div>
-<g-button @click="$toast('我是 toast 内容，我默认在3秒后自动关闭。')">点我从上方弹出，并自动关闭</g-button>
+<m-button @click="$toast('我是 toast 内容，我默认在3秒后自动关闭。')">点我从上方弹出，并自动关闭</m-button>
 <br>
-<g-button @click="onClickButton">点我从下方弹出，且不自动关闭</g-button>
+<m-button @click="onClickButton">点我从下方弹出，且不自动关闭</m-button>
 </div>
 
 methods: {

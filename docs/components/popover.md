@@ -13,20 +13,20 @@ title: Popover - 弹出层
 
 ## 代码展示
 ```vue
-<g-popover>
-  <g-button>点我弹出气泡卡片</g-button>
+<m-popover>
+  <m-button>点我弹出气泡卡片</m-button>
   <template slot="content">我是气泡卡片</template>
-</g-popover>
+</m-popover>
 <br>
-<g-popover trigger="hover">
-  <g-button>摸我弹出气泡卡片（鼠标移入）</g-button>
+<m-popover trigger="hover">
+  <m-button>摸我弹出气泡卡片（鼠标移入）</m-button>
   <template slot="content">我是气泡卡片</template>
-</g-popover>
+</m-popover>
 <br>
-<g-popover position="right">
-  <g-button>点我从右边弹出气泡卡片</g-button>
+<m-popover position="right">
+  <m-button>点我从右边弹出气泡卡片</m-button>
   <template slot="content">我是气泡卡片</template>
-</g-popover>
+</m-popover>
 ```
 
 ## 弹出层属性
