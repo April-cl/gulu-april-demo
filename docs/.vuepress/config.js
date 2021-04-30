@@ -8,6 +8,7 @@ module.exports = {
     }
   },
   themeConfig: {
+    displayAllHeaders: true,
     nav: [
       {text: '主页', link: '/'},
       {text: '指南', link: '/guide/'},
@@ -18,9 +19,12 @@ module.exports = {
       '/get-started/',
       {
         title: '组件',
+        collapsable: false,
         children: [
           {
             title: '通用',
+            collapsable: false,
+            sidebarDepth: 0,
             children: [
               '/components/button',
               '/components/button-group'
@@ -28,6 +32,8 @@ module.exports = {
           },
           {
             title: '布局',
+            collapsable: false,
+            sidebarDepth: 0,
             children: [
               '/components/grid',
               '/components/layout'
@@ -35,12 +41,16 @@ module.exports = {
           },
           {
             title: '数据录入',
+            collapsable: false,
+            sidebarDepth: 0,
             children: [
               '/components/input'
             ]
           },
           {
             title: '数据展示',
+            collapsable: false,
+            sidebarDepth: 0,
             children: [
               '/components/collapse',
               '/components/popover',
