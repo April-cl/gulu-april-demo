@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h2>我是横向标签页</h2>
+      <h4>我是横向标签页</h4>
       <m-tabs :selected.sync="selectedTab">
         <m-tabs-head>
           <m-tabs-item name="1">标签1</m-tabs-item>
@@ -16,7 +16,7 @@
       </m-tabs>
     </div>
     <div>
-      <h2>我是纵向标签页</h2>
+      <h4>我是纵向标签页</h4>
       <m-tabs :selected.sync="selectedTab" direction="vertical">
         <m-tabs-head>
           <m-tabs-item name="1">标签1</m-tabs-item>

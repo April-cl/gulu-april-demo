@@ -66,7 +66,6 @@ $border-color: #ddd;
       > .line {
         top: 0;
         right: 0;
-        border-bottom: 3px solid $blue;
         border-right: 3px solid $blue;
       }
     }
