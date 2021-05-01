@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'GuluTabsPane',
+  name: 'MochaUITabsPane',
   inject: ['eventBus'],
   data () {
     return {

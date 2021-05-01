@@ -1,6 +1,6 @@
 {
   "name": "mocha-ui-demo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "一个简单好用的 UI 组件库",
   "main": "dist/index.js",
   "scripts": {

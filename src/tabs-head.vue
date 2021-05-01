@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'GuluTabsHead',
+  name: 'MochaUITabsHead',
   inject: ['eventBus', 'direction'],
   mounted () {
     if (this.eventBus) {

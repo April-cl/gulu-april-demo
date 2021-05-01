@@ -7,7 +7,7 @@
 import Vue from 'vue'
 
 export default {
-  name: 'GuluTabs',
+  name: 'MochaUITabs',
   props: {
     selected: {
       type: String,
@@ -40,9 +40,9 @@ export default {
     },
     selectTab () {
       this.$children.forEach((vm) => {
-        if (vm.$options.name === 'GuluTabsHead') {
+        if (vm.$options.name === 'MochaUITabsHead') {
           vm.$children.forEach((childVm) => {
-            if (childVm.$options.name === 'GuluTabsItem' && childVm.name === this.selected) {
+            if (childVm.$options.name === 'MochaUITabsItem' && childVm.name === this.selected) {
               this.eventBus.$emit('update:selected', this.selected, childVm)
             }
           })

@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "GuluCollapseItem",
+  name: "MochaUICollapseItem",
   props: {
     title: {
       type: String,

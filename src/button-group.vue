@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'GuluButtonGroup',
+  name: 'MochaUIButtonGroup',
   mounted(){
     for(let node of this.$el.children){
       let name = node.nodeName.toLowerCase()

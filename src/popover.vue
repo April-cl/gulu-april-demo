@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "GuluPopover",
+  name: "MochaUIPopover",
   props: {
     position: {
       type: String,

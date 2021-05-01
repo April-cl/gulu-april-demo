@@ -19,7 +19,7 @@ let validator = (value) => {
   return valid
 }
 export default {
-  name: 'GuluCol',
+  name: 'MochaUICol',
   props: {
     span: {
       type: [Number, String]

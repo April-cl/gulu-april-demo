@@ -10,7 +10,7 @@
 <script>
 import Icon from './icon.vue'
 export default {
-  name: 'GuluButton',
+  name: 'MochaUIButton',
   components: {
     'm-icon': Icon
   },
